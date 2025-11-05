@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+# Grant the workflow write permission to repository contents so GITHUB_TOKEN
+# can push the gh-pages branch (prevents 403 permission denied errors).
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
