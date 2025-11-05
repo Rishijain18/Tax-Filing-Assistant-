@@ -31,7 +31,7 @@ jobs:
         working-directory: ./frontend
         run: npm run build
         env:
-          VITE_API_URL: https://tax-filing-assistant-api.onrender.com/api
+          VITE_API_URL: https://tax-filing-assistant-api.onrender.com
 
       - name: Deploy to GitHub Pages (gh-pages branch)
         uses: peaceiris/actions-gh-pages@v3
