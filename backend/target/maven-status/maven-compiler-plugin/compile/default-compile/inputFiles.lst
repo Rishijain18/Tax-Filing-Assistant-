@@ -1,0 +1,13 @@
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\model\entities\IncomeDetail.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\controller\TaxController.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\model\entities\TaxSummary.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\TaxFilingAssistantApplication.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\model\entities\User.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\repository\TaxSummaryRepository.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\model\TaxCalculationResponse.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\repository\UserRepository.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\model\TaxCalculationRequest.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\model\entities\Deduction.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\repository\DeductionRepository.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\service\TaxService.java
+e:\OneDrive\Desktop\CODING\fullstack\backend\src\main\java\com\taxapp\repository\IncomeDetailRepository.java

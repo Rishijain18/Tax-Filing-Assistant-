@@ -1,0 +1,13 @@
+com\taxapp\model\entities\IncomeDetail.class
+com\taxapp\TaxFilingAssistantApplication.class
+com\taxapp\model\TaxCalculationResponse.class
+com\taxapp\model\entities\TaxSummary.class
+com\taxapp\service\TaxService.class
+com\taxapp\model\entities\User.class
+com\taxapp\controller\TaxController.class
+com\taxapp\repository\DeductionRepository.class
+com\taxapp\repository\IncomeDetailRepository.class
+com\taxapp\model\TaxCalculationRequest.class
+com\taxapp\repository\UserRepository.class
+com\taxapp\model\entities\Deduction.class
+com\taxapp\repository\TaxSummaryRepository.class
