@@ -2,8 +2,8 @@ FROM maven:3.9.4-eclipse-temurin-21 AS builder
 WORKDIR /workspace
 
 # Copy source and build the application
-COPY pom.xml mvnw mvnw.cmd ./
-COPY .mvn .mvn
+# mvnw and .mvn don't exist in this folder on Render; the builder image includes Maven.
+COPY pom.xml ./
 COPY src ./src
 RUN mvn -B -DskipTests package
 
