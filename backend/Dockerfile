@@ -10,7 +10,7 @@ FROM eclipse-temurin:21-jre
 WORKDIR /app
 
 # Copy the packaged jar from the builder stage and rename it explicitly
-COPY --from=builder /workspace/target/tax-filing-assistant-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=builder /workspace/target/tax-filing-backend-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
 
 # Add Spring Boot runtime configuration with sane defaults
