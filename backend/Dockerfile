@@ -15,19 +15,17 @@ EXPOSE 8080
 
 # Add Spring Boot runtime configuration with sane defaults
 ENV SPRING_PROFILES_ACTIVE=prod
-ENV SERVER_PORT=8080
 ENV JAVA_OPTS="-Xmx512m -Xms256m"
 
-# Use PORT from environment if provided
-ARG PORT
-ENV SERVER_PORT=${PORT:-8080}
+# Default to port 10000 if not set by Render
+ENV PORT=10000
+
+# Expose the port
+EXPOSE ${PORT}
 
 # Add health check
 HEALTHCHECK --interval=30s --timeout=3s \
-  CMD curl -f http://localhost:${SERVER_PORT}/actuator/health || exit 1
+  CMD curl -f http://localhost:${PORT}/actuator/health || exit 1
 
 # Use shell form to allow environment variable substitution
-ENTRYPOINT java $JAVA_OPTS \
-           -Dserver.port=$PORT \
-           -Dspring.profiles.active=${SPRING_PROFILES_ACTIVE} \
-           -jar app.jar
+ENTRYPOINT ["sh", "-c", "java ${JAVA_OPTS} -Dserver.port=${PORT} -Dspring.profiles.active=${SPRING_PROFILES_ACTIVE} -jar app.jar"]
