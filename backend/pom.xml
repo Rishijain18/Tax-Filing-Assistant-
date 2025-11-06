@@ -9,6 +9,7 @@
   <properties>
     <java.version>21</java.version>
     <spring.boot.version>3.5.7</spring.boot.version>
+    <start-class>com.taxapp.TaxFilingAssistantApplication</start-class>
   </properties>
 
   <dependencyManagement>
@@ -71,6 +72,22 @@
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring.boot.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+            <configuration>
+              <mainClass>${start-class}</mainClass>
+              <layout>JAR</layout>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
